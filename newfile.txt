@@ -1,9 +1,12 @@
-VCS tools allow the creation of a _____ in order to keep alternate streams of work from conflicting with one another while also providing the ability to merge the work back together at a later point, while allowing teams of developers to verify if the changes on either branch conflict.
+VCS tools allow the creation of a _branch_ in order to keep alternate streams of work from conflicting with one another while also providing the ability to merge the work back together at a later point, while allowing teams of developers to verify if the changes on either branch conflict.
 Software teams often adopt a practice of creating a new branch for each new feature, or to branch every time you want to create a release version.
 
-_______ is Git's way of putting a split branch history back together again. The git merge command lets you take separate branches and integrate them into a single branch.
+_Merging_ is Git's way of putting a split branch history back together again. The git merge command lets you take separate branches and integrate them into a single branch.
 git 'merge' will combine multiple sequences of commits into one unified history. Most commonly, git merge is used to combine two 'branches'. In these scenarios, git merge takes two commits, each of the branch leafs. Once Git finds a common base commit it will create a new "merge commit" that combines the changes of both branches.
 
+git _stash_ is a command that will temporarily stash (or shelve) any changes you've made to your current working copy so that you may come back and re-apply them later.
+Stashing is useful should you need to quickly switch branches or work on something else, but you're partially through some changes that you aren't quite ready to commit.
+
 Git is all about managing contributions between different developers. Sometimes you may have multiple developers attempting to change the same content on different branches. If a Developer attempts to change some code that a different Developer is working on, a conflict may occur.
-Merge _________ are what arise when two branches have edited code in the same part of the same file.
+Merge _conflicts_ are what arise when two branches have edited code in the same part of the same file.
 
